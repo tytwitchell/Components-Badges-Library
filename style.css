@@ -1,0 +1,490 @@
+* {
+    box-sizing: border-box;
+    margin: 0
+}
+
+
+/**********************************
+********** color styles ***********
+***********************************/
+
+
+:root {
+    /* gray styles */
+    --background-gray: #F3F4F6;
+    --color-gray: #1F2937;
+    
+    /* red styles */
+    --background-red: #FEE2E2;
+    --color-red: #991B1B;
+    --alt-background-red: #FEF2F2;
+    --alt-color-red: #B45309;
+    
+    /* yellow styles */
+    --background-yellow: #FEF3C7;
+    --color-yellow: #92400E;
+    --alt-background-yellow: #FFFBEB;
+    --alt-color-yellow: #B45309;
+    
+    /* green styles */
+    --background-green: #D1FAE5;
+    --color-green: #065F46;
+    --alt-background-green: #ECFDF5;
+    --alt-color-green: #047857;
+    
+    /* blue styles */
+    --background-blue: #DBEAFE;
+    --color-blue: #1E40AF;
+    --alt-background-blue: #EFF6FF;
+    --alt-color-blue: #1C51B9;
+    
+    /* indigo styles */
+    --background-indigo: #E0E7FF;
+    --color-indigo: #3730A3;
+    
+    /* purple styles */
+    --background-purple: #EDE9FE;
+    --color-purple: #5B21B6;
+    
+    /* pink styles */
+    --background-pink: #FCE7F3;
+    --color-pink: #9D174D;
+    
+}
+
+.gray {
+    background-color: var(--background-gray);
+    color: var(--color-gray)
+}
+
+.red {
+    background-color: var(--background-red);
+    color: var(--color-red)
+}
+
+.yellow {
+    background-color: var(--background-yellow);
+    color: var(--color-yellow)
+}
+
+.green {
+    background-color: var(--background-green);
+    color: var(--color-green)
+}
+
+.blue {
+    background-color: var(--background-blue);
+    color: var(--color-blue)
+}
+
+.indigo {
+    background-color: var(--background-indigo);
+    color: var(--color-indigo)
+}
+
+.purple {
+    background-color: var(--background-purple);
+    color: var(--color-purple)
+}
+
+.pink {
+    background-color: var(--background-pink);
+    color: var(--color-pink)
+}
+
+
+/**********************************
+******** component styles *********
+***********************************/
+
+
+body {
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: Inter;
+    color: #232323
+}
+
+h3 {
+    text-decoration: underline;
+    margin: 2.5rem 0;
+    font-size: 1rem;
+}
+
+
+/********** badge **********/
+
+.badge-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown-container,
+.text-container,
+.type-container {
+    display: grid
+}
+
+.badge-square,
+.badge-pill {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 2px 12px;
+}
+
+.badge-square {
+    border-radius: 4px;
+}
+
+.badge-pill {
+    border-radius: 12px;
+}
+
+.badge-options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+label,
+.input-text,
+.dropdown
+ {
+    font-size: .8rem
+}
+
+.input-text {
+    padding: .24rem;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin: .5rem .2rem;
+    color: inherit;
+    outline: none;
+    width: 4.25rem;
+    font-style: inherit
+}
+
+.dropdown {
+    padding: .2rem;
+    border-radius: 4px;
+    margin: .5rem .2rem;
+    color: inherit;
+    outline: none
+}
+
+/********** banner **********/
+
+.banner-container {
+    width: 100%;
+}
+
+.input-text-banner {
+    padding: .24rem;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin: .5rem .2rem;
+    color: inherit;
+    outline: none;
+    width: 80vw;
+    max-width: 896px;
+    font-style: inherit;
+    font-size: 14px;
+
+}
+
+.banner-el-container {
+    display: grid;
+    grid-template: auto auto / 20px auto;
+    padding: 1rem;
+    width: 80vw;
+    max-width: 896px;
+    border-radius: 6px;
+    margin: .5rem 0;
+    align-items: left
+
+}
+
+.banner-img {
+    grid-row: 1;
+    grid-column: 1;
+    width: 20px;
+}
+
+.banner-title {
+    grid-row: 1;
+    grid-column: 2;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 0 .5rem .5rem .5rem
+}
+
+.banner-description {
+    grid-row: 2;
+    grid-column: 2;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: .7;
+    line-height: 20px;
+    margin-left: .5rem;
+
+}
+
+.success {
+    background-color: var(--alt-background-green);
+    color: var(--alt-color-green)
+}
+
+.warning {
+    background-color: var(--alt-background-yellow);
+    color: var(--alt-color-yellow)
+}
+
+.error {
+    background-color: var(--alt-background-red);
+    color: var(--alt-color-red)
+}
+
+.neutral {
+    background-color: var(--alt-background-blue);
+    color: var(--alt-color-blue)
+}
+
+
+/************ Card  ************/
+
+.card-el-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: #F9FAFB; 
+    width: 336px;
+    align-items: center;
+    gap: 32px;
+    margin: 1rem;
+    min-width: 400px;
+    height: fit-content;
+    padding: 0 24px 32px 24px;
+    position: relative;
+
+}
+
+.card-el-container:hover,
+.card-el-container:focus,
+.img-container:hover,
+.img-container:focus {
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.10);
+}
+
+.img-container {
+    border-radius: 6px;
+    background-color: #3F75FE;
+    display: flex;
+    width: 53px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.10);
+    position: absolute;
+    top: -25px
+}
+
+.img-cloud {
+    width: 24px;
+    height: 24px;
+}
+
+.card-el-container > h4 {
+    font-size: 1.125rem;
+    margin-top: 3.25rem;
+    margin-bottom: -.5rem; 
+    font-weight: 500;
+    
+}
+
+.card-el-container > p {
+    font-size: 1rem;
+    color: #6B7280;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+
+
+/********* Testimonials *********/
+
+
+
+.img-testimonial {
+    width: 320px;
+    height: 180px;
+    position: absolute;
+    top: -85px;
+    left: 2px;
+    object-fit: cover; 
+    object-position: 70% 20%;
+    border-radius: 10px;
+}
+
+.testimonial-element {
+    background-color: #2545B8;
+    width: 325px;
+    position: relative;
+    margin: 125px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.img-quotes {
+    margin: 125px 16px 25px;
+    width: 40px;
+}
+
+.testimonial-text {
+    color: #FFF;
+    font-size: 24px;
+    line-height: 32px; 
+    margin: 0 16px;
+}
+
+.name-container {
+    margin: 20px 0 50px 16px;
+}
+
+.testimonial-name,
+.testimonial-position {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.testimonial-name {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: -5px
+}
+
+.testimonial-position {
+    font-size: 13px;
+    font-weight: 500
+}
+
+@media (min-width: 800px) {
+    
+    .testimonial-element {
+        width: 1200px;
+        height: 375px;
+        display: grid;
+        grid-template:  130px auto auto / 500px auto;
+        align-items: center;
+    }
+    
+    .img-testimonial {
+        grid-row: 1 / -1;
+        grid-column: 1;
+        width: auto;
+        height: 464px;
+        top: -25px;
+        left: 50px
+    }
+
+    .img-quotes {
+        grid-row: 1;
+        grid-column: 2;
+        
+    }
+
+    .testimonial-text {
+        grid-row: 2;
+        grid-column: 2;
+        margin-top: 25px
+    }
+
+    .name-container {
+        grid-row: 3;
+        grid-column: 2
+    }
+}
+
+
+
+/************ Tooltip *************/
+
+
+.tooltip-el-container {
+    display: grid;
+    grid-template: auto auto / 35px auto 16px;
+    width: 384px;
+    padding: 13px 16px 20px;
+    gap: 5px;
+    border-radius: 8px;
+    background: #262626;
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.10);
+    color: #FFF;
+    font-size: 14px;
+    line-height: 20px;
+    position: relative
+}
+
+.img-polygon {
+    position: absolute;
+    bottom: -10px;
+    left: 45px
+}
+
+.img-inbox {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.img-dismiss {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.img-dismiss:hover,
+.img-dismiss:focus {
+    cursor: pointer;
+    opacity: .7
+}
+
+.title-tooltip {
+    grid-row: 1;
+    grid-column: 2;
+    align-self: center
+}
+
+.text-tooltip {
+    grid-row: 2;
+    grid-column: 2;
+    color: #C7C7C7;
+}
+
+.hidden {
+    animation: suck .3s ease-out;
+}
+
+@keyframes suck {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: translate(-35%, 100%) scale(0.2); /* Adjust the final scale as needed */
+    opacity: 0;
+    display: none
+  }
+  
+}
+
