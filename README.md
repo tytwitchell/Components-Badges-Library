@@ -1,7 +1,8 @@
 # Components-Badges-Practice
 
-I made this project to showcase my ability to make components that other developers on my team could easily edit and integrate into their projects.  
-To help guide them, I used JSDoc tags to describe where in the code they could edit the text and/or styles of the components.  
+I created this project to showcase my ability to design components that other developers on my team can easily customize and integrate into their work. This project utilizes Context to pass data to child components and organizes the components using consistent nomenclature, neatly placed in separate folders.
+
+To provide guidance in my code, I utilized JSDoc tags to describe the sections of the code where they can modify text and styles in the components.  
 
 For demonstration purposes, I made an interactive UI to change the text and styles of the badge and banner components
 
