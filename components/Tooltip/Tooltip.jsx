@@ -6,9 +6,11 @@ export { TooltipContext }
 
 export default function Tooltip({children}) {
     
-    ///////// update tooltip title and text here using state //////////
+/**
+ * update tooltip title and text here using state 
+ */
     const [tooltipTitle, setTooltipTitle] = React.useState('Archive notes')
-    const [tooltipText, setTooltipText] = React.useState('Lorem ipsum dolor sit amet consectetur        adipisicing elit oluptatum tenetur.')
+    const [tooltipText, setTooltipText] = React.useState('Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.')
     
     const [tipHidden, setTipHidden] = React.useState(false)
     

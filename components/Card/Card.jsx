@@ -5,7 +5,9 @@ export { CardContext }
 
 export default function Card({ children }) {
     
-    ////// update card text and title using state ///////
+/**
+ * update card text and title using the below state
+*/
     const [cardText, setCardText] = React.useState('Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.')
     const [cardTitle, setCardTitle] = React.useState('Easy Deployment')
     
