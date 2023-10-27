@@ -7,28 +7,62 @@ import Testimonial from './components/Testimonial/index'
 import Tooltip from './components/Tooltip/index'
 
 function App() {
-  
+
+  /**
+   * TEXT OPTIONS FOR ALL COMPONENTS: 
+   * You can edit the below text declarations for the specified component
+   * if values are left undefined, default text will be generated
+   */
+
+  /**
+   * TOOLTIP
+   */
+  const titleToolTip = ''
+  const bodyTextToolTip = ''
+
+  /**
+   * BADGE
+   * Colors: gray, red, yellow, green, blue, indigo, purple, pink -- if left undefined, the default color will be 'green'
+   * Type: square, pill  -- if left undefined, the default type will be 'Square'
+  */
+  const colorBadge = ''
+  const textBadge = ''
+  const typeBadge = ''
+
+  /**
+   * BANNER
+   */
+  const textBanner = ''
+
+  /**
+   * CARD 
+   */
+  const titleTextCard = ''
+  const bodyTextCard = ''
+
+  /**
+   * TESTIMONIAL 
+   * img: can test an alt image by using 'craig.png'
+   */
+  const imgTestimonial = ''
+  const textTestimonial = ''
+  const textNameTestimonial = ''
+  const textWorkTitleTestimonial = ''
+
   return (
     <>
       <h3>Tooltip</h3>
-      <Tooltip>
+      <Tooltip titleText={titleToolTip} bodyText={bodyTextToolTip}>
         <Tooltip.Element />
       </Tooltip>
     
       <h3>Badge</h3>
-      <Badge>
-        <div className='badge-options'>
-          <Badge.Text />
-          <Badge.Type />
-          <Badge.Dropdown>
-            <Badge.Colors />
-          </Badge.Dropdown>
-        </div>
+      <Badge color={colorBadge} text={textBadge} type={typeBadge} >
         <Badge.Element/>
       </Badge>
       
       <h3>Banner</h3>
-      <Banner>
+      <Banner text={textBanner}>
         <Banner.Text />
         <Banner.Element varient='success'/>
         <Banner.Element varient='warning'/>
@@ -37,12 +71,17 @@ function App() {
       </Banner>
       
       <h3>Card</h3>
-      <Card>
+      <Card titleText={titleTextCard} bodyText={bodyTextCard}>
        <Card.Element />
       </Card>
       
       <h3>Testimonial</h3>
-      <Testimonial>
+      <Testimonial 
+        image={imgTestimonial} 
+        text={textTestimonial}
+        name={textNameTestimonial}
+        workTitle={textWorkTitleTestimonial}
+      >
         <Testimonial.Element />
       </Testimonial>
     </>

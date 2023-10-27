@@ -3,7 +3,7 @@ import { BannerContext } from './Banner'
 
 export default function BannerElement({ varient }) {
     
-    const { bannerType, setBannerType, bannerDescription } = React.useContext(BannerContext)
+    const { bannerDescription } = React.useContext(BannerContext)
     
     
     const bannerData = {

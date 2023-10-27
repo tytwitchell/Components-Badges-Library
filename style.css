@@ -323,18 +323,19 @@ label,
 
 .img-testimonial {
     width: 320px;
+    /* max-width: 320px; */
     height: 180px;
     position: absolute;
     top: -85px;
-    left: 2px;
+    left: 7px;
     object-fit: cover; 
-    object-position: 70% 20%;
+    object-position: 70% 25%;
     border-radius: 10px;
 }
 
 .testimonial-element {
     background-color: #2545B8;
-    width: 325px;
+    width: 335px;
     position: relative;
     margin: 125px 0;
     display: flex;
@@ -342,6 +343,7 @@ label,
     align-items: left;
     justify-content: center;
     border-radius: 3px;
+
 }
 
 .img-quotes {
@@ -354,10 +356,12 @@ label,
     font-size: 24px;
     line-height: 32px; 
     margin: 0 16px;
+
 }
 
 .name-container {
     margin: 20px 0 50px 16px;
+ 
 }
 
 .testimonial-name,
@@ -382,20 +386,24 @@ label,
 @media (min-width: 800px) {
     
     .testimonial-element {
-        width: 1200px;
+        min-width: 1200px;
         height: 375px;
         display: grid;
-        grid-template:  130px auto auto / 500px auto;
+        grid-template:  130px auto auto / 450px auto ;
         align-items: center;
+        justify-content: left
     }
     
     .img-testimonial {
-        grid-row: 1 / -1;
-        grid-column: 1;
-        width: auto;
-        height: 464px;
-        top: -25px;
-        left: 50px
+        grid-row: 1 / -1; 
+        object-fit: cover;
+        overflow: hidden;
+        object-position: 50% 20%;
+        /* width: auto; */
+        width: 375px;
+        height: 425px;
+        top: -20px;
+        left: 25px
     }
 
     .img-quotes {

@@ -3,16 +3,15 @@ import React from 'react'
 const BannerContext = React.createContext()
 export { BannerContext }
 
-export default function Banner({ children }) {
+export default function Banner({ children, text }) {
     
-    const [bannerType, setBannerType] = React.useState('error')
-    
-/**
- * you can change the description of the banner below via state or by using the rendered input
-*/
-    const [bannerDescription, setBannerDescription] = React.useState('Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.')
-    bannerDescription === '' ? setBannerDescription('Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.') : ''
-    
+    const [bannerType, setBannerType] = React.useState('')
+    const [bannerDescription, setBannerDescription] = React.useState(text)
+
+    text && bannerDescription === '' 
+        ? setBannerDescription(text) 
+        : text === '' && bannerDescription === '' ? setBannerDescription('Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.') 
+        : ''
     
     return (
         <BannerContext.Provider value= {

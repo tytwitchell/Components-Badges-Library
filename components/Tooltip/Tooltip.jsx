@@ -4,15 +4,20 @@ const TooltipContext = React.createContext()
 export { TooltipContext }
 
 
-export default function Tooltip({children}) {
+export default function Tooltip({ children, titleText, bodyText }) {
     
-/**
- * update tooltip title and text here using state 
- */
-    const [tooltipTitle, setTooltipTitle] = React.useState('Archive notes')
-    const [tooltipText, setTooltipText] = React.useState('Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.')
-    
+    const [tooltipTitle, setTooltipTitle] = React.useState(titleText)
+    const [tooltipText, setTooltipText] = React.useState(bodyText)
     const [tipHidden, setTipHidden] = React.useState(false)
+
+
+    tooltipTitle === '' 
+        ? setTooltipTitle('Archive notes') 
+        : ''
+
+    tooltipText === '' 
+        ? setTooltipText('Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.') 
+        : ''
     
     function handleHideTip() {
         setTipHidden(true)

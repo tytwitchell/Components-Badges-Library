@@ -3,10 +3,10 @@ import { BannerContext } from './Banner'
 
 export default function BannerText() {
     
-    const { setBannerDescription } = React.useContext(BannerContext)
+    const { bannerDescription, setBannerDescription } = React.useContext(BannerContext)
     
-    function handleBannerTextUpdate(e) {
-        setTimeout(setBannerDescription(e.target.value), 500)
+    function handleBannerTextUpdate(tar) {
+        setTimeout(setBannerDescription(tar.target.value), 500)
     }
     
     return (
