@@ -1,4 +1,4 @@
-# Components-Badges-Practice
+# Components-Badges-Library
 
 I created this project to showcase my ability to design components that other developers on my team can easily customize and integrate into their work. This project utilizes Context to pass data to child components and organizes the components using consistent nomenclature, neatly placed in separate folders.
 
