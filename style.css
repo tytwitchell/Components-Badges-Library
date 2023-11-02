@@ -212,7 +212,7 @@ label,
 .banner-img {
     grid-row: 1;
     grid-column: 1;
-    width: 20px;
+    height: 1.25rem
 }
 
 .banner-title {
@@ -295,8 +295,9 @@ label,
 }
 
 .img-cloud {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
+    color: white;
 }
 
 .card-el-container > h4 {
@@ -348,7 +349,8 @@ label,
 
 .img-quotes {
     margin: 125px 16px 25px;
-    width: 40px;
+    color: white;
+    opacity: .4
 }
 
 .testimonial-text {
@@ -447,12 +449,15 @@ label,
 .img-polygon {
     position: absolute;
     bottom: -10px;
-    left: 45px
+    left: 48px;
+    transform: rotate(180deg);
+    color: #232323;
 }
 
 .img-inbox {
     grid-row: 1;
     grid-column: 1;
+
 }
 
 .img-dismiss {
