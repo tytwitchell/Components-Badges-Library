@@ -47,6 +47,6 @@ For demonstration purposes, I included an interactive UI element that changes th
 # Stumbling and Learning Points
 1. Figuring out how to enable the banner component to differentiate between the text that developers can add by changing the textBanner value in the index.jsx file and the text that is provided through the input element. 
 
-![banner-logic-img](https://github.com/tytwitchell/components-library/assets/135183794/5eccd3ea-3c93-46d2-bdcb-7a26c07148d1)
+![banner-logic-img](https://github.com/tytwitchell/components-library/assets/135183794/d001ad41-6b56-475c-aff9-979f0a4c3ce6)
 
 
