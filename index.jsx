@@ -6,6 +6,7 @@ import Card from './src/components/Card/index'
 import Testimonial from './src/components/Testimonial/index'
 import Tooltip from './src/components/Tooltip/index'
 import image2 from "./src/assets/images/craig.png";
+import Drawer from './src/components/Drawer/Drawer';
 
 
 function App() {
@@ -52,6 +53,9 @@ function App() {
 
   return (
     <>
+      <h3>Drawer</h3>
+      <Drawer />
+      
       <h3>Tooltip</h3>
       <Tooltip titleText={titleToolTip} bodyText={bodyTextToolTip}>
         <Tooltip.Element />
